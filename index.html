@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Cards Game by King</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/gaming.png"image/x-icon">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', ( ) => {
+        VANTA.DOTS({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x6e5bb9,
+      color2: 0x1b5757,
+      backgroundColor: 0xc0c0c,
+      size: 5.00,
+      spacing: 67.00
+    })
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+      
+    })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+
+    
+    <div class="wrapper">
+      <div class="container"> 
+        <script>
+        let person = prompt("Mời bạn nhập tên của mình");
+        let text;
+        if (person == null || person == "") {
+        alert("Buồn quá, bạn không muốn nhập tên!");
+        text = "Player's Name: " + "none";
+        } else {
+        alert("Xin chào " + person + "!" + "\nCùng Chơi Game Nào :)))");
+        text = "Player's Name: " + person;
+        }     
+        document.write(text);
+        </script>
+        <div class="score-box">
+          <p>Score:<span id="score"><b>0</b></span></p> 
+        </div>
+      </div>
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/pokeball-img.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/pic-4.png" alt="card-img">
+          </div>
+        </li>
+      </ul>
+      <div class="details"> 
+        <p class="time"><img src="./images/clock.png" alt="clock">  :<span><b>45</b>s</span></p> 
+        <p class="flips"><img src="./images/flip.png" alt="flip">  :<span><b>0</b></span></p> 
+        <button>Refresh</button> </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
